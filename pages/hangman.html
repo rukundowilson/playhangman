@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>games</title>
+    <script src="../js/hangman.js"></script>
+    <link rel="stylesheet" href="../css/hangman.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="preview.html" class="home"><i class="uil uil-home"></i></a>
+        </div>
+        <br>
+        <div>
+            <a href="preview.html" class="back"><i class="uil uil-step-backward-alt"></i></a>
+        </div>
+    </nav>
+    <div class="result">
+        <div class="ifwon">
+            
+            <h1 id="out-time">
+                conglatulations you saved the man!
+                game won.
+            </h1>
+            <h2 style="color: white;" class="reveal">The word was <SPan id="reveal"></SPan></h2>
+            <button type="" id="reset"><i class="uil uil-redo"></i></button>
+
+        </div>
+    </div>
+     <div class="control-room" id="control">
+         <div class="side-bar">
+            <h1 id="life" style="text-align: center;">time left</h1>
+            <div class="images"><img src="../media/images/student-to-task-hangman.png" alt="" srcset=""></div>
+            <hr>
+            <div class="game-btn counter">
+                <h1 id="digital-clock">00:60</h1>
+            </div>
+            <hr>
+
+         </div>
+         <div class="main-content">
+            <div class="excluded">
+                <h2>Not Happy With word<br><span id="exclude"></span></h2>
+                <button type="reset" id="re-run"><i class="uil uil-redo"></i></button>
+                <div class="game-btn attempts">
+                    <h2>attempts<br><span id="t-attempts">0</span></h2>
+                </div>
+            </div>
+            <div class="user">
+                <div id="hints">
+                    <h1>HINTS </h1>
+                    <p>hint1: <span id="hint1">----------</span></p>
+                    <p>hint2: <span id="hint2">----------</span></p>
+                
+                </div>
+                <div id="progress">
+                    <H1>current status <br><span id="d-progress">- - - -</span> </H1>
+                </div>
+                <div class="keyboard">
+                    <!-- keys are packed vitually -->
+                </div>
+            </div>
+         </div>
+     </div>
+     <footer>
+        <div class="me">
+            <h3>about developer </h3>
+            <ul>
+                <li>rukundo wilson</li>
+                <li><i class="uil uil-github-alt"></i><a href="https://github.com/rukundowilson/">github</a></li>
+            </ul>
+        </div>
+     </footer>
+</body>
+</html>
