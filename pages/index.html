@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preview</title>
+    <style>
+        body{
+            background-color: #ffffff34;
+        }
+        *{
+            font-family: sans-serif,'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        .intro{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 150px 50px 0 50px;
+        }
+        .wrapper{
+            color: hsla(0, 73%, 3%, 0.767);
+        }
+        .line{
+            height: 4px;
+            background-color: green;
+            width: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+        .game-info{
+            margin: 20px;
+            line-height: 35px;
+            padding: 1.7rem;
+            font-size: 1.5rem;
+            border-radius: 6px;
+            color: #0000009c;
+            box-shadow: 2px 5px 10px 3px rgba(0, 0, 0, 0.226);
+            margin-inline: auto;
+        }
+        .box{
+            background-color: green;
+            margin: 1.4rem;
+            padding: 10px;
+            color: #fff;
+            font-size: 1.3rem;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="wrapper">
+            <h1>HANGMAN GAME</h1>
+            <div class="line"></div>
+        </div>
+        <div class="game-info">
+            <h5>game instructions</h5>
+            <p>In hangman you are going to guess the secret word letter by letter .<br>If you quess the word in time you will save the man from hang.
+           <br> if you don't get to guess the word in time the man will be hanged. <br> You will find <b>hints</b> useful  which will help you quess <br> the word faster.</p> <br>
+           <h5>more about hints</h5>
+           <p>In hints you have first character and third character of secret word <br>others
+            remains hidden and you will deal with quessig them.  <br>
+            you will also find which <b>class</b> secret word belongs to
+           </p>
+        </div>
+        <a href="hangman.html">
+            <div class="play box">PLAY</div>
+        </a>
+        <a href="home.html">
+            <div class="home box">BACK</div>
+        </a>
+    
+    </div>
+
+</body>
+</html>
