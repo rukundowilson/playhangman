@@ -22,24 +22,61 @@ document.addEventListener("DOMContentLoaded", () => {
     // Game setup
     function gameResources(callback, callback2) {
         const fruits = [
-            'mango', 'pinneaple', 'orange', "avocado","watermelon","banana","strawberrie","grape",
-            'lemons','papaya'
-        ];
+    'apple', 'apricot', 'avocado', 'banana', 'blackberry', 'blueberry',
+    'cantaloupe', 'cherry', 'coconut', 'cranberry', 'currant', 'date',
+    'dragon fruit', 'durian', 'elderberry', 'fig', 'gooseberry', 'grape',
+    'grapefruit', 'guava', 'honeydew', 'jackfruit', 'kiwi', 'lemon',
+    'lime', 'lychee', 'mango', 'mulberry', 'nectarine', 'orange',
+    'papaya', 'passion fruit', 'peach', 'pear', 'persimmon', 'pineapple',
+    'plum', 'pomegranate', 'quince', 'raspberry', 'starfruit', 'strawberry',
+    'tangerine', 'ugli fruit', 'watermelon'
+];
+
         const animal = [
-            'human', 'gorilla', 'lion', "bird", "owl", "snake","horse","cat","cheetah","turtle",
-            'tortoise','leopard','rabbit','donkey','bear','pig','cow','lizard','sheep','chameleon',
-            'giraffe','wolf','jellyfish'
-        ];
+    'human', 'gorilla', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'wolf',
+    'fox', 'elephant', 'rhino', 'hippopotamus', 'zebra', 'giraffe', 'cow', 'pig',
+    'sheep', 'goat', 'horse', 'donkey', 'camel', 'deer', 'rabbit', 'kangaroo',
+    'koala', 'cat', 'dog', 'mouse', 'rat', 'squirrel', 'bat',
+
+    'bird', 'owl', 'eagle', 'falcon', 'parrot', 'pigeon', 'peacock', 'duck',
+    'chicken', 'turkey', 'penguin', 'swan', 'flamingo',
+
+    'snake', 'lizard', 'chameleon', 'crocodile', 'turtle', 'tortoise', 'gecko', 'iguana',
+
+    'frog', 'toad', 'salamander',
+
+    'jellyfish', 'octopus', 'squid', 'crab', 'lobster', 'shrimp', 'starfish',
+
+    'shark', 'whale', 'dolphin', 'seal', 'sea lion', 'fish', 'stingray', 'eel'
+];
+
         const others = [
-            'water', 'food', 'basket', "knife", "bottle","jellycan"
-        ];
-        const utensils=[
-            "fork","spoon","plate","dish","sourcepan","cupboard",
-        ];
-        const electronicDevice=[
-            "laptop","television","radio","telephone","walk tokie","printer","mouse","Keyboard","router","scanner","headphones",
-            "ipod"
-        ];
+    'water', 'food', 'basket', 'knife', 'bottle', 'jerrycan',
+    'bucket', 'bag', 'box', 'container', 'rope', 'towel',
+    'blanket', 'chair', 'table', 'cloth', 'fan', 'lamp',
+    'matchbox', 'candle', 'flashlight', 'battery', 'notebook',
+    'pen', 'pencil', 'scissors', 'glue', 'stapler', 'mirror',
+    'soap', 'brush', 'comb', 'umbrella', 'calendar', 'clock',
+    'wallet', 'key', 'lock', 'belt', 'shoes', 'hat', 'glasses',
+    'phone case', 'charger', 'plastic wrap', 'aluminum foil'
+];
+
+        const utensils = [
+    'fork', 'spoon', 'knife', 'plate', 'bowl', 'cup', 'mug',
+    'saucepan', 'frying pan', 'pot', 'ladle', 'whisk', 'peeler',
+    'grater', 'tongs', 'chopsticks', 'cutting board', 'measuring cup',
+    'measuring spoon', 'colander', 'strainer', 'spatula', 'rolling pin',
+    'brush', 'teaspoon', 'tablespoon', 'skimmer', 'can opener'
+];
+
+        const electronicDevice = [
+    'laptop', 'television', 'radio', 'telephone', 'walkie talkie', 'printer',
+    'mouse', 'keyboard', 'router', 'scanner', 'headphones', 'ipod',
+    'smartphone', 'tablet', 'smartwatch', 'monitor', 'speakers', 'projector',
+    'camera', 'microphone', 'gaming console', 'external hard drive', 'usb flash drive',
+    'charger', 'modem', 'dvd player', 'bluetooth speaker'
+];
+
         const combination = [...fruits, ...animal, ...others, ...electronicDevice, ...utensils];
         const randomIndex = Math.floor(Math.random() * combination.length);
         
